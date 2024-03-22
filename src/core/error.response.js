@@ -1,28 +1,8 @@
 "use strict";
 
-const StatusCode = {
-  OK: 200,
-  CREATED: 201,
-  NO_CONTENT: 204,
-  BAD_REQUEST: 400,
-  UNAUTHORIZED: 401,
-  FORBIDDEN: 403,
-  NOT_FOUND: 404,
-  CONFLICT: 409,
-  INTERNAL_SERVER_ERROR: 500,
-};
+const StatusCode = require("../utils/httpStatusCode").StatusCodes;
 
-const ReasonStatusCode = {
-  OK: "OK",
-  CREATED: "CREATED",
-  NO_CONTENT: "NO_CONTENT",
-  BAD_REQUEST: "BAD_REQUEST",
-  UNAUTHORIZED: "UNAUTHORIZED",
-  FORBIDDEN: "FORBIDDEN",
-  NOT_FOUND: "NOT_FOUND",
-  CONFLICT: "CONFLICT",
-  INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
-};
+const ReasonPhrase = require("../utils/httpStatusCode").ReasonPhrases;
 
 class ErrorResponse extends Error {
   constructor(message, status) {
@@ -33,7 +13,7 @@ class ErrorResponse extends Error {
 
 class ConflictRequestError extends ErrorResponse {
   constructor(
-    message = ReasonStatusCode.CONFLICT,
+    message = ReasonPhrase.CONFLICT,
     statusCode = StatusCode.CONFLICT
   ) {
     super(message, statusCode);
@@ -42,7 +22,7 @@ class ConflictRequestError extends ErrorResponse {
 
 class BadRequestError extends ErrorResponse {
   constructor(
-    message = ReasonStatusCode.BAD_REQUEST,
+    message = ReasonPhrase.BAD_REQUEST,
     statusCode = StatusCode.BAD_REQUEST
   ) {
     super(message, statusCode);
@@ -51,8 +31,17 @@ class BadRequestError extends ErrorResponse {
 
 class NotFoundRequestError extends ErrorResponse {
   constructor(
-    message = ReasonStatusCode.NOT_FOUND,
+    message = ReasonPhrase.NOT_FOUND,
     statusCode = StatusCode.NOT_FOUND
+  ) {
+    super(message, statusCode);
+  }
+}
+
+class AuthFailedError extends ErrorResponse {
+  constructor(
+    message = ReasonPhrase.UNAUTHORIZED,
+    statusCode = StatusCode.UNAUTHORIZED
   ) {
     super(message, statusCode);
   }

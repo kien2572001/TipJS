@@ -6,14 +6,75 @@ const crypto = require("crypto");
 const KeyTokenService = require("../services/keyToken.service");
 const { createTokenPair } = require("../auth/authUtils");
 const { getInfoData } = require("../utils");
-const { BadRequestError } = require("../core/error.response");
+const { BadRequestError, AuthFailedError } = require("../core/error.response");
+const { findShopByEmail } = require("./shop.service");
 const RoleShop = {
   SHOP: "SHOP",
   WRITER: "WRITER",
   EDITOR: "EDITOR",
+  ADMIN: "ADMIN",
 };
 
 class AccessService {
+  /*
+    1 - check if email exists
+    2 - check if password is correct
+    3 - create AT and RT and save RT to db
+    4 - generate token
+    5 - get data return login
+  */
+  static login = async ({ email, password, refreshToken }) => {
+    console.log("[P]::[AccessService]::[login]");
+    //step 1
+    const foundShop = await findShopByEmail({ email });
+    if (!foundShop) {
+      throw new BadRequestError("Shop not found");
+    }
+    //step 2
+    const match = await bcrypt.compare(password, foundShop.password);
+    if (!match) {
+      throw new AuthFailedError("Password is incorrect");
+    }
+
+    //step 3
+    //create privateKey, publicKey
+    const privateKey = crypto.randomBytes(64).toString("hex");
+    const publicKey = crypto.randomBytes(64).toString("hex");
+
+    //step 4
+
+    const { _id: userId } = foundShop;
+    const tokens = await createTokenPair(
+      {
+        userId: userId,
+        email: foundShop.email,
+      },
+      publicKey,
+      privateKey
+    );
+
+    await KeyTokenService.createKeyToken({
+      refreshToken: tokens.refreshToken,
+      privateKey,
+      publicKey,
+      userId: userId,
+    });
+
+    // if (!publicKeyString) {
+    //   throw new BadRequestError("create publicKey failed");
+    // }
+
+    return {
+      metadata: {
+        shop: getInfoData({
+          fields: ["_id", "name", "email", "status", "verify", "roles"],
+          object: foundShop,
+        }),
+        tokens,
+      },
+    };
+  };
+
   static signUp = async ({ name, email, password }) => {
     console.log("[P]::[AccessService]::[signUp]");
     //step 1: check if email exists
