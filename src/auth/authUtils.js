@@ -1,6 +1,18 @@
 "use strict";
 
+const HEADER = {
+  API_KEY: "x-api-key",
+  CLIENT_ID: "x-client-id",
+  AUTHORIZATION: "authorization",
+};
+
 const JWT = require("jsonwebtoken");
+const asyncHandler = require("../helper/asyncHandler");
+const KeyTokenService = require("../services/keyToken.service");
+const {
+  AuthFailedError,
+  NotFoundRequestError,
+} = require("../core/error.response");
 const createTokenPair = async (payload, publicKey, privateKey) => {
   try {
     const accessToken = JWT.sign(payload, publicKey, {
@@ -27,6 +39,49 @@ const createTokenPair = async (payload, publicKey, privateKey) => {
   }
 };
 
+const authentication = asyncHandler(async (req, res, next) => {
+  /*
+    1 - check userId is missing
+    2 - get accessToken
+    3 - verifyToken
+    4 - check user ib db
+    5 - check key store with this userId
+    6 - OK all -> next
+  */
+
+  //step 1
+  const userId = req.headers[HEADER.CLIENT_ID];
+  if (!userId) {
+    throw new AuthFailedError("Invalid request");
+  }
+
+  //step 2
+  console.log("test");
+  const keyStore = await KeyTokenService.findByUserId(userId);
+  if (!keyStore) {
+    throw new NotFoundRequestError("Not found key store");
+  }
+  console.log("keyStore");
+
+  //step 3
+  const accessToken = req.headers[HEADER.AUTHORIZATION];
+  if (!accessToken) {
+    throw new AuthFailedError("Invalid request");
+  }
+
+  try {
+    const decodedUser = JWT.verify(accessToken, keyStore.publicKey);
+    if (userId !== decodedUser.userId)
+      throw new AuthFailedError("Invalid user");
+    req.keyStore = keyStore;
+    return next();
+  } catch (error) {
+    console.log("error", error);
+    throw error;
+  }
+});
+
 module.exports = {
   createTokenPair,
+  authentication,
 };
