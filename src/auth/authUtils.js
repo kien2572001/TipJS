@@ -56,12 +56,10 @@ const authentication = asyncHandler(async (req, res, next) => {
   }
 
   //step 2
-  console.log("test");
   const keyStore = await KeyTokenService.findByUserId(userId);
   if (!keyStore) {
     throw new NotFoundRequestError("Not found key store");
   }
-  console.log("keyStore");
 
   //step 3
   const accessToken = req.headers[HEADER.AUTHORIZATION];
@@ -76,12 +74,16 @@ const authentication = asyncHandler(async (req, res, next) => {
     req.keyStore = keyStore;
     return next();
   } catch (error) {
-    console.log("error", error);
     throw error;
   }
 });
 
+const verifyJWT = (token, keySecret) => {
+  return JWT.verify(token, keySecret);
+};
+
 module.exports = {
   createTokenPair,
   authentication,
+  verifyJWT,
 };
