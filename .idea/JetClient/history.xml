@@ -1052,6 +1052,821 @@
             </responseState>
           </option>
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711287777428" />
+          <option name="id" value="4ef68762-fa3b-4bed-8747-9097635b6553" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Accept" />
+                    <option name="value" value="*/*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-client-id" />
+                    <option name="value" value="65fdae1d2b15713dd06443e8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyNzY4OTUsImV4cCI6MTcxMTQ0OTY5NX0.cpjMGb66SJomJF18iVv8UIgBn0gnT7N_hgEVsb58-64" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4902bc52-ecdb-4276-ae73-81e6a40204b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/product" />
+              <option name="url" value="http://localhost:3000/v1/api/product" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQ2Fubm90IHJlYWQgcHJvcGVydGllcyBvZiB1bmRlZmluZWQgKHJlYWRpbmcgJ3VzZXJJZCcpIiwiY29kZSI6NTAwfQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Cannot read properties of undefined (reading 'userId')&quot;,&#10;  &quot;code&quot; : 500&#10;}" />
+              <option name="code" value="500" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="79" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;4f-ERf5kqCsd7F5i95pvV7okzlOGyk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 13:42:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4ef68762-fa3b-4bed-8747-9097635b6553" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Cannot read properties of undefined (reading 'userId')&quot;,&quot;code&quot;:500}" />
+              <option name="size" value="79" />
+              <option name="time" value="53" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711288059645" />
+          <option name="id" value="4b046d14-c5fd-4599-95d1-26465f1280cd" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Accept" />
+                    <option name="value" value="*/*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-client-id" />
+                    <option name="value" value="65fdae1d2b15713dd06443e8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyNzY4OTUsImV4cCI6MTcxMTQ0OTY5NX0.cpjMGb66SJomJF18iVv8UIgBn0gnT7N_hgEVsb58-64" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4902bc52-ecdb-4276-ae73-81e6a40204b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/product" />
+              <option name="url" value="http://localhost:3000/v1/api/product" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBjcmVhdGVkIiwic3RhdHVzQ29kZSI6MjAwLCJyZWFzb25QaHJhc2UiOiJPSyIsIm1ldGFkYXRhIjp7InByb2R1Y3RfbmFtZSI6Ik5ldyBKZWFucyIsInByb2R1Y3RfdGh1bWIiOiJwcm9kdWN0X3RodW1iIiwicHJvZHVjdF9kZXNjcmlwdGlvbiI6IlF1YW4geGluIGtvIGJhbyBnaW8gcmFjaCIsInByb2R1Y3RfcHJpY2UiOjEwMCwicHJvZHVjdF9xdWFudGl0eSI6MjAsInByb2R1Y3RfdHlwZSI6IkNsb3RoaW5nIiwicHJvZHVjdF9zaG9wIjoiNjVmZGFlMWQyYjE1NzEzZGQwNjQ0M2U4IiwicHJvZHVjdF9hdHRyaWJ1dGVzIjp7ImJyYW5kIjoiTGV2aXMncyIsInNpemUiOiJMIiwibWF0ZXJpYWwiOiJEZW5pbSJ9LCJfaWQiOiI2NjAwMmVmYjU5NzM3MWMwYmRiMzQ5MjIiLCJjcmVhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjQ3OjM5LjYzMloiLCJ1cGRhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjQ3OjM5LjYzMloiLCJfX3YiOjB9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Product created&quot;,&#10;  &quot;statusCode&quot; : 200,&#10;  &quot;reasonPhrase&quot; : &quot;OK&quot;,&#10;  &quot;metadata&quot; : {&#10;    &quot;product_name&quot; : &quot;New Jeans&quot;,&#10;    &quot;product_thumb&quot; : &quot;product_thumb&quot;,&#10;    &quot;product_description&quot; : &quot;Quan xin ko bao gio rach&quot;,&#10;    &quot;product_price&quot; : 100,&#10;    &quot;product_quantity&quot; : 20,&#10;    &quot;product_type&quot; : &quot;Clothing&quot;,&#10;    &quot;product_shop&quot; : &quot;65fdae1d2b15713dd06443e8&quot;,&#10;    &quot;product_attributes&quot; : {&#10;      &quot;brand&quot; : &quot;Levis's&quot;,&#10;      &quot;size&quot; : &quot;L&quot;,&#10;      &quot;material&quot; : &quot;Denim&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;66002efb597371c0bdb34922&quot;,&#10;    &quot;createdAt&quot; : &quot;2024-03-24T13:47:39.632Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-03-24T13:47:39.632Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="487" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e7-OPZ7C9XGKsvI5VAHxBeIZtu0zqk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 13:47:39 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4b046d14-c5fd-4599-95d1-26465f1280cd" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product created&quot;,&quot;statusCode&quot;:200,&quot;reasonPhrase&quot;:&quot;OK&quot;,&quot;metadata&quot;:{&quot;product_name&quot;:&quot;New Jeans&quot;,&quot;product_thumb&quot;:&quot;product_thumb&quot;,&quot;product_description&quot;:&quot;Quan xin ko bao gio rach&quot;,&quot;product_price&quot;:100,&quot;product_quantity&quot;:20,&quot;product_type&quot;:&quot;Clothing&quot;,&quot;product_shop&quot;:&quot;65fdae1d2b15713dd06443e8&quot;,&quot;product_attributes&quot;:{&quot;brand&quot;:&quot;Levis's&quot;,&quot;size&quot;:&quot;L&quot;,&quot;material&quot;:&quot;Denim&quot;},&quot;_id&quot;:&quot;66002efb597371c0bdb34922&quot;,&quot;createdAt&quot;:&quot;2024-03-24T13:47:39.632Z&quot;,&quot;updatedAt&quot;:&quot;2024-03-24T13:47:39.632Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="487" />
+              <option name="time" value="82" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711288243678" />
+          <option name="id" value="90d53d09-663d-4e85-a5d4-faadece36924" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="FORM_URL_ENCODED" />
+                  <option name="urlEncoded">
+                    <list>
+                      <urlEncodedParameterState>
+                        <option name="key" value="email" />
+                        <option name="value" value="kien2572006.ntk@gmail.com" />
+                      </urlEncodedParameterState>
+                      <urlEncodedParameterState>
+                        <option name="key" value="password" />
+                        <option name="value" value="123456" />
+                      </urlEncodedParameterState>
+                    </list>
+                  </option>
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/x-www-form-urlencoded" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a1c4c293-5403-4c34-8a59-8de5ea21054f" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/login" />
+              <option name="url" value="http://localhost:3000/v1/api/shop/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gT0siLCJzdGF0dXNDb2RlIjoyMDAsInJlYXNvblBocmFzZSI6Ik9LIiwibWV0YWRhdGEiOnsibWV0YWRhdGEiOnsic2hvcCI6eyJfaWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJuYW1lIjoiU2hvcDIzMjEiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJzdGF0dXMiOiJpbmFjdGl2ZSIsInJvbGVzIjpbIlNIT1AiXX0sInRva2VucyI6eyJhY2Nlc3NUb2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVNXUWlPaUkyTldaa1lXVXhaREppTVRVM01UTmtaREEyTkRRelpUZ2lMQ0psYldGcGJDSTZJbXRwWlc0eU5UY3lNREEyTG01MGEwQm5iV0ZwYkM1amIyMGlMQ0pwWVhRaU9qRTNNVEV5T0RneU5ETXNJbVY0Y0NJNk1UY3hNVFEyTVRBME0zMC5Fd19Wdm85UUFwY2RoaEtFdXVIdnFCdDRBdU95YVdTTUhOanJlVlFEMU40IiwicmVmcmVzaFRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5U1dRaU9pSTJOV1prWVdVeFpESmlNVFUzTVROa1pEQTJORFF6WlRnaUxDSmxiV0ZwYkNJNkltdHBaVzR5TlRjeU1EQTJMbTUwYTBCbmJXRnBiQzVqYjIwaUxDSnBZWFFpT2pFM01URXlPRGd5TkRNc0ltVjRjQ0k2TVRjeE1UZzVNekEwTTMwLlE2cWd5a2F0aS1ZRW9hYmR3SmNsS2E0NXR4UTdWTzBORExlWXZUQ1ROY1kifX19fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Login OK&quot;,&#10;  &quot;statusCode&quot; : 200,&#10;  &quot;reasonPhrase&quot; : &quot;OK&quot;,&#10;  &quot;metadata&quot; : {&#10;    &quot;metadata&quot; : {&#10;      &quot;shop&quot; : {&#10;        &quot;_id&quot; : &quot;65fdae1d2b15713dd06443e8&quot;,&#10;        &quot;name&quot; : &quot;Shop2321&quot;,&#10;        &quot;email&quot; : &quot;kien2572006.ntk@gmail.com&quot;,&#10;        &quot;status&quot; : &quot;inactive&quot;,&#10;        &quot;roles&quot; : [&#10;          &quot;SHOP&quot;&#10;        ]&#10;      },&#10;      &quot;tokens&quot; : {&#10;        &quot;accessToken&quot; : &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4&quot;,&#10;        &quot;refreshToken&quot; : &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTg5MzA0M30.Q6qgykati-YEoabdwJclKa45txQ7VO0NDLeYvTCTNcY&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="712" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2c8-ktuO75QIF1C3vcJNPUvwi4417MI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 13:50:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="90d53d09-663d-4e85-a5d4-faadece36924" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login OK&quot;,&quot;statusCode&quot;:200,&quot;reasonPhrase&quot;:&quot;OK&quot;,&quot;metadata&quot;:{&quot;metadata&quot;:{&quot;shop&quot;:{&quot;_id&quot;:&quot;65fdae1d2b15713dd06443e8&quot;,&quot;name&quot;:&quot;Shop2321&quot;,&quot;email&quot;:&quot;kien2572006.ntk@gmail.com&quot;,&quot;status&quot;:&quot;inactive&quot;,&quot;roles&quot;:[&quot;SHOP&quot;]},&quot;tokens&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTg5MzA0M30.Q6qgykati-YEoabdwJclKa45txQ7VO0NDLeYvTCTNcY&quot;}}}}" />
+              <option name="size" value="712" />
+              <option name="time" value="149" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711288254029" />
+          <option name="id" value="b0152ebe-4189-44da-98c0-e57568e00267" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Accept" />
+                    <option name="value" value="*/*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-client-id" />
+                    <option name="value" value="65fdae1d2b15713dd06443e8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4902bc52-ecdb-4276-ae73-81e6a40204b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/product" />
+              <option name="url" value="http://localhost:3000/v1/api/product" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBjcmVhdGVkIiwic3RhdHVzQ29kZSI6MjAwLCJyZWFzb25QaHJhc2UiOiJPSyIsIm1ldGFkYXRhIjp7InByb2R1Y3RfbmFtZSI6Ik5ldyBKZWFucyIsInByb2R1Y3RfdGh1bWIiOiJwcm9kdWN0X3RodW1iIiwicHJvZHVjdF9kZXNjcmlwdGlvbiI6IlF1YW4geGluIGtvIGJhbyBnaW8gcmFjaCIsInByb2R1Y3RfcHJpY2UiOjEwMCwicHJvZHVjdF9xdWFudGl0eSI6MjAsInByb2R1Y3RfdHlwZSI6IkNsb3RoaW5nIiwicHJvZHVjdF9zaG9wIjoiNjVmZGFlMWQyYjE1NzEzZGQwNjQ0M2U4IiwicHJvZHVjdF9hdHRyaWJ1dGVzIjp7ImJyYW5kIjoiTGV2aXMncyIsInNpemUiOiJMIiwibWF0ZXJpYWwiOiJEZW5pbSJ9LCJfaWQiOiI2NjAwMmZiZThmMzczZjkwZjJkOThkNjYiLCJjcmVhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjUwOjU0LjAyMloiLCJ1cGRhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjUwOjU0LjAyMloiLCJfX3YiOjB9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Product created&quot;,&#10;  &quot;statusCode&quot; : 200,&#10;  &quot;reasonPhrase&quot; : &quot;OK&quot;,&#10;  &quot;metadata&quot; : {&#10;    &quot;product_name&quot; : &quot;New Jeans&quot;,&#10;    &quot;product_thumb&quot; : &quot;product_thumb&quot;,&#10;    &quot;product_description&quot; : &quot;Quan xin ko bao gio rach&quot;,&#10;    &quot;product_price&quot; : 100,&#10;    &quot;product_quantity&quot; : 20,&#10;    &quot;product_type&quot; : &quot;Clothing&quot;,&#10;    &quot;product_shop&quot; : &quot;65fdae1d2b15713dd06443e8&quot;,&#10;    &quot;product_attributes&quot; : {&#10;      &quot;brand&quot; : &quot;Levis's&quot;,&#10;      &quot;size&quot; : &quot;L&quot;,&#10;      &quot;material&quot; : &quot;Denim&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;66002fbe8f373f90f2d98d66&quot;,&#10;    &quot;createdAt&quot; : &quot;2024-03-24T13:50:54.022Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-03-24T13:50:54.022Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="487" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e7-YeoqEyTog6diHUy+/vvsn42jbno&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 13:50:54 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b0152ebe-4189-44da-98c0-e57568e00267" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product created&quot;,&quot;statusCode&quot;:200,&quot;reasonPhrase&quot;:&quot;OK&quot;,&quot;metadata&quot;:{&quot;product_name&quot;:&quot;New Jeans&quot;,&quot;product_thumb&quot;:&quot;product_thumb&quot;,&quot;product_description&quot;:&quot;Quan xin ko bao gio rach&quot;,&quot;product_price&quot;:100,&quot;product_quantity&quot;:20,&quot;product_type&quot;:&quot;Clothing&quot;,&quot;product_shop&quot;:&quot;65fdae1d2b15713dd06443e8&quot;,&quot;product_attributes&quot;:{&quot;brand&quot;:&quot;Levis's&quot;,&quot;size&quot;:&quot;L&quot;,&quot;material&quot;:&quot;Denim&quot;},&quot;_id&quot;:&quot;66002fbe8f373f90f2d98d66&quot;,&quot;createdAt&quot;:&quot;2024-03-24T13:50:54.022Z&quot;,&quot;updatedAt&quot;:&quot;2024-03-24T13:50:54.022Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="487" />
+              <option name="time" value="34" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711288439297" />
+          <option name="id" value="9a0e54fb-8ca8-4fd6-92bc-72426ae0ef81" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Accept" />
+                    <option name="value" value="*/*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-client-id" />
+                    <option name="value" value="65fdae1d2b15713dd06443e8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4902bc52-ecdb-4276-ae73-81e6a40204b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/product" />
+              <option name="url" value="http://localhost:3000/v1/api/product" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBjcmVhdGVkIiwic3RhdHVzQ29kZSI6MjAwLCJyZWFzb25QaHJhc2UiOiJPSyIsIm1ldGFkYXRhIjp7InByb2R1Y3RfbmFtZSI6Ik5ldyBKZWFucyIsInByb2R1Y3RfdGh1bWIiOiJwcm9kdWN0X3RodW1iIiwicHJvZHVjdF9kZXNjcmlwdGlvbiI6IlF1YW4geGluIGtvIGJhbyBnaW8gcmFjaCIsInByb2R1Y3RfcHJpY2UiOjEwMCwicHJvZHVjdF9xdWFudGl0eSI6MjAsInByb2R1Y3RfdHlwZSI6IkNsb3RoaW5nIiwicHJvZHVjdF9zaG9wIjoiNjVmZGFlMWQyYjE1NzEzZGQwNjQ0M2U4IiwicHJvZHVjdF9hdHRyaWJ1dGVzIjp7ImJyYW5kIjoiTGV2aXMncyIsInNpemUiOiJMIiwibWF0ZXJpYWwiOiJEZW5pbSJ9LCJfaWQiOiI2NjAwMzA3NzhmMzczZjkwZjJkOThkNmQiLCJjcmVhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjUzOjU5LjI5MVoiLCJ1cGRhdGVkQXQiOiIyMDI0LTAzLTI0VDEzOjUzOjU5LjI5MVoiLCJfX3YiOjB9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Product created&quot;,&#10;  &quot;statusCode&quot; : 200,&#10;  &quot;reasonPhrase&quot; : &quot;OK&quot;,&#10;  &quot;metadata&quot; : {&#10;    &quot;product_name&quot; : &quot;New Jeans&quot;,&#10;    &quot;product_thumb&quot; : &quot;product_thumb&quot;,&#10;    &quot;product_description&quot; : &quot;Quan xin ko bao gio rach&quot;,&#10;    &quot;product_price&quot; : 100,&#10;    &quot;product_quantity&quot; : 20,&#10;    &quot;product_type&quot; : &quot;Clothing&quot;,&#10;    &quot;product_shop&quot; : &quot;65fdae1d2b15713dd06443e8&quot;,&#10;    &quot;product_attributes&quot; : {&#10;      &quot;brand&quot; : &quot;Levis's&quot;,&#10;      &quot;size&quot; : &quot;L&quot;,&#10;      &quot;material&quot; : &quot;Denim&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;660030778f373f90f2d98d6d&quot;,&#10;    &quot;createdAt&quot; : &quot;2024-03-24T13:53:59.291Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-03-24T13:53:59.291Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="487" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1e7-jHFZnQt4dWDNZoXp/OZrQHwMwnU&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 13:53:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9a0e54fb-8ca8-4fd6-92bc-72426ae0ef81" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product created&quot;,&quot;statusCode&quot;:200,&quot;reasonPhrase&quot;:&quot;OK&quot;,&quot;metadata&quot;:{&quot;product_name&quot;:&quot;New Jeans&quot;,&quot;product_thumb&quot;:&quot;product_thumb&quot;,&quot;product_description&quot;:&quot;Quan xin ko bao gio rach&quot;,&quot;product_price&quot;:100,&quot;product_quantity&quot;:20,&quot;product_type&quot;:&quot;Clothing&quot;,&quot;product_shop&quot;:&quot;65fdae1d2b15713dd06443e8&quot;,&quot;product_attributes&quot;:{&quot;brand&quot;:&quot;Levis's&quot;,&quot;size&quot;:&quot;L&quot;,&quot;material&quot;:&quot;Denim&quot;},&quot;_id&quot;:&quot;660030778f373f90f2d98d6d&quot;,&quot;createdAt&quot;:&quot;2024-03-24T13:53:59.291Z&quot;,&quot;updatedAt&quot;:&quot;2024-03-24T13:53:59.291Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="487" />
+              <option name="time" value="23" />
+            </responseState>
+          </option>
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1711289001800" />
+          <option name="id" value="001215cf-5edd-483f-8006-7e6494e5ff3b" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="x-api-key" />
+                    <option name="value" value="0988742565" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Accept" />
+                    <option name="value" value="*/*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-client-id" />
+                    <option name="value" value="65fdae1d2b15713dd06443e8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4902bc52-ecdb-4276-ae73-81e6a40204b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="v1/api/product" />
+              <option name="url" value="http://localhost:3000/v1/api/product" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBjcmVhdGVkIiwic3RhdHVzQ29kZSI6MjAwLCJyZWFzb25QaHJhc2UiOiJPSyIsIm1ldGFkYXRhIjp7InByb2R1Y3RfbmFtZSI6Ik5ldyBKZWFucyBLZWtlIiwicHJvZHVjdF90aHVtYiI6InByb2R1Y3RfdGh1bWIiLCJwcm9kdWN0X2Rlc2NyaXB0aW9uIjoiUXVhbiB4aW4ga28gYmFvIGdpbyByYWNoIiwicHJvZHVjdF9wcmljZSI6MTAwLCJwcm9kdWN0X3F1YW50aXR5IjoyMCwicHJvZHVjdF90eXBlIjoiQ2xvdGhpbmciLCJwcm9kdWN0X3Nob3AiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJwcm9kdWN0X2F0dHJpYnV0ZXMiOnsiYnJhbmQiOiJMZXZpcydzIiwic2l6ZSI6IkwiLCJtYXRlcmlhbCI6IkRlbmltIn0sIl9pZCI6IjY2MDAzMmE5ZTAyZDkwMWVmMTA5NzllZSIsImNyZWF0ZWRBdCI6IjIwMjQtMDMtMjRUMTQ6MDM6MjEuNzk0WiIsInVwZGF0ZWRBdCI6IjIwMjQtMDMtMjRUMTQ6MDM6MjEuNzk0WiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot; : &quot;Product created&quot;,&#10;  &quot;statusCode&quot; : 200,&#10;  &quot;reasonPhrase&quot; : &quot;OK&quot;,&#10;  &quot;metadata&quot; : {&#10;    &quot;product_name&quot; : &quot;New Jeans Keke&quot;,&#10;    &quot;product_thumb&quot; : &quot;product_thumb&quot;,&#10;    &quot;product_description&quot; : &quot;Quan xin ko bao gio rach&quot;,&#10;    &quot;product_price&quot; : 100,&#10;    &quot;product_quantity&quot; : 20,&#10;    &quot;product_type&quot; : &quot;Clothing&quot;,&#10;    &quot;product_shop&quot; : &quot;65fdae1d2b15713dd06443e8&quot;,&#10;    &quot;product_attributes&quot; : {&#10;      &quot;brand&quot; : &quot;Levis's&quot;,&#10;      &quot;size&quot; : &quot;L&quot;,&#10;      &quot;material&quot; : &quot;Denim&quot;&#10;    },&#10;    &quot;_id&quot; : &quot;660032a9e02d901ef10979ee&quot;,&#10;    &quot;createdAt&quot; : &quot;2024-03-24T14:03:21.794Z&quot;,&#10;    &quot;updatedAt&quot; : &quot;2024-03-24T14:03:21.794Z&quot;,&#10;    &quot;__v&quot; : 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Opener-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cross-Origin-Resource-Policy" />
+                    <option name="value" value="same-origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Origin-Agent-Cluster" />
+                    <option name="value" value="?1" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Referrer-Policy" />
+                    <option name="value" value="no-referrer" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Strict-Transport-Security" />
+                    <option name="value" value="max-age=15552000; includeSubDomains" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-DNS-Prefetch-Control" />
+                    <option name="value" value="off" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Download-Options" />
+                    <option name="value" value="noopen" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="SAMEORIGIN" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Permitted-Cross-Domain-Policies" />
+                    <option name="value" value="none" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="492" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ec-60IYD6+vPz1rsCiy2AW+mEtUQkA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Accept-Encoding" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 24 Mar 2024 14:03:21 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="001215cf-5edd-483f-8006-7e6494e5ff3b" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product created&quot;,&quot;statusCode&quot;:200,&quot;reasonPhrase&quot;:&quot;OK&quot;,&quot;metadata&quot;:{&quot;product_name&quot;:&quot;New Jeans Keke&quot;,&quot;product_thumb&quot;:&quot;product_thumb&quot;,&quot;product_description&quot;:&quot;Quan xin ko bao gio rach&quot;,&quot;product_price&quot;:100,&quot;product_quantity&quot;:20,&quot;product_type&quot;:&quot;Clothing&quot;,&quot;product_shop&quot;:&quot;65fdae1d2b15713dd06443e8&quot;,&quot;product_attributes&quot;:{&quot;brand&quot;:&quot;Levis's&quot;,&quot;size&quot;:&quot;L&quot;,&quot;material&quot;:&quot;Denim&quot;},&quot;_id&quot;:&quot;660032a9e02d901ef10979ee&quot;,&quot;createdAt&quot;:&quot;2024-03-24T14:03:21.794Z&quot;,&quot;updatedAt&quot;:&quot;2024-03-24T14:03:21.794Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="492" />
+              <option name="time" value="47" />
+            </responseState>
+          </option>
+        </requestHistoryState>
       </list>
     </option>
   </component>
