@@ -11,7 +11,7 @@ const productSchema = new Schema(
       required: true,
       trim: true,
     },
-    product_thump: {
+    product_thumb: {
       type: String,
       required: true,
     },
