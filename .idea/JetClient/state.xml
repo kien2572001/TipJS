@@ -27,7 +27,7 @@
                     <requestState>
                       <option name="body">
                         <bodyState>
-                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke123&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
                           <option name="type" value="JSON" />
                         </bodyState>
                       </option>
