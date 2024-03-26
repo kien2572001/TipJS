@@ -14,8 +14,14 @@ const {findAllDraftsForShop,
     searchProductByUser,
     unpublishProductByShop,
     findAllProducts,
-    findProduct
+    findProduct,
+    updateProductById,
 } = require("../models/repositories/product.repo");
+
+const {
+    removeUndefinedObject,
+    updateNestedObject,
+} = require("../utils");
 
 //define Factory class to create product instances
 
@@ -36,6 +42,14 @@ class ProductFactory {
             throw new BadRequestError("Invalid product type: " + type)
         }
         return new productClass(payload).createProduct();
+    }
+
+    static async updateProduct(type,product_id,payload) {
+        const productClass = ProductFactory.productRegistry[type];
+        if (!productClass) {
+            throw new BadRequestError("Invalid product type: " + type)
+        }
+        return new productClass(payload).updateProduct(product_id);
     }
 
     static async publishProductByShop({product_shop, product_id}) {
@@ -105,6 +119,14 @@ class Product {
             _id: productId,
         });
     }
+
+    async updateProduct(productId,bodyUpdate) {
+        return await updateProductById({
+            product_id: productId,
+            updateData: bodyUpdate,
+            model: productModel,
+        });
+    }
 }
 
 //define sub-class for different product types Clothing and Electronic
@@ -124,6 +146,22 @@ class Clothing extends Product {
         }
 
         return newProduct;
+    }
+
+    async updateProduct(product_id) {
+        //1. remove attributes null or undefined
+        const objectParams = removeUndefinedObject(this);
+        //2. check xem update o cho nao
+        if (objectParams.product_attributes) {
+            //update child product
+            await updateProductById({
+                product_id: product_id,
+                updateData: updateNestedObject(objectParams.product_attributes),
+                model: clothingModel,
+            });
+        }
+        const updateProduct = await super.updateProduct(product_id, updateNestedObject(objectParams));
+        return updateProduct;
     }
 }
 

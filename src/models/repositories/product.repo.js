@@ -43,6 +43,12 @@ const findProduct = async ({product_id,unselect}) => {
         .exec()
 }
 
+const updateProductById = async ({product_id, updateData,model,isNew = true}) => {
+    return await model.updateOne({
+        _id: new mongoose.Types.ObjectId(product_id)
+    }, updateData, {new: isNew})
+}
+
 const searchProductByUser = async ({keySearch}) => {
     const regex = new RegExp(keySearch, 'i')
     return await productModel.find({
@@ -100,5 +106,6 @@ module.exports = {
     unpublishProductByShop,
     searchProductByUser,
     findAllProducts,
-    findProduct
+    findProduct,
+    updateProductById
 }
