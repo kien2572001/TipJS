@@ -99,42 +99,6 @@
                     <requestState>
                       <option name="body">
                         <bodyState>
-                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke123&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
-                          <option name="type" value="JSON" />
-                        </bodyState>
-                      </option>
-                      <option name="headers">
-                        <list>
-                          <headerState>
-                            <option name="key" value="x-api-key" />
-                            <option name="value" value="0988742565" />
-                          </headerState>
-                          <headerState>
-                            <option name="key" value="Accept" />
-                            <option name="value" value="*/*" />
-                          </headerState>
-                          <headerState>
-                            <option name="key" value="x-client-id" />
-                            <option name="value" value="65fdae1d2b15713dd06443e8" />
-                          </headerState>
-                          <headerState>
-                            <option name="key" value="Content-Type" />
-                            <option name="value" value="application/json" />
-                          </headerState>
-                          <headerState>
-                            <option name="key" value="Authorization" />
-                            <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
-                          </headerState>
-                        </list>
-                      </option>
-                      <option name="id" value="dc8228e7-22bd-4742-80c2-e9987db7c236" />
-                      <option name="method" value="GET" />
-                      <option name="name" value="v1/api/product/published/all" />
-                      <option name="url" value="http://localhost:3000/v1/api/product/published/all" />
-                    </requestState>
-                    <requestState>
-                      <option name="body">
-                        <bodyState>
                           <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;Iphone 15 promax&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Electronic&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;manufacturer&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
                           <option name="type" value="JSON" />
                         </bodyState>
@@ -186,6 +150,42 @@
                             <option name="value" value="*/*" />
                           </headerState>
                           <headerState>
+                            <option name="key" value="x-client-id" />
+                            <option name="value" value="65fdae1d2b15713dd06443e8" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="dc8228e7-22bd-4742-80c2-e9987db7c236" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="v1/api/product/published/all" />
+                      <option name="url" value="http://localhost:3000/v1/api/product/published/all" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke123&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="x-api-key" />
+                            <option name="value" value="0988742565" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Accept" />
+                            <option name="value" value="*/*" />
+                          </headerState>
+                          <headerState>
                             <option name="disabled" value="true" />
                             <option name="key" value="x-client-id" />
                             <option name="value" value="65fdae1d2b15713dd06443e8" />
@@ -204,6 +204,80 @@
                       <option name="method" value="GET" />
                       <option name="name" value="v1/api/product/search/:keySearch" />
                       <option name="url" value="http://localhost:3000/v1/api/product/search/keke" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke123&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="x-api-key" />
+                            <option name="value" value="0988742565" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Accept" />
+                            <option name="value" value="*/*" />
+                          </headerState>
+                          <headerState>
+                            <option name="disabled" value="true" />
+                            <option name="key" value="x-client-id" />
+                            <option name="value" value="65fdae1d2b15713dd06443e8" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="f394c273-7f1d-4e10-b955-e3d2349a9d5e" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="v1/api/product/" />
+                      <option name="url" value="http://localhost:3000/v1/api/product" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;product_name&quot;: &quot;New Jeans Keke123&quot;,&#10;  &quot;product_description&quot;: &quot;Quan xin ko bao gio rach&quot;,&#10;  &quot;product_price&quot;: 100,&#10;  &quot;product_shop&quot;: &quot;65fdae1d2b15713dd06443e8&quot;,&#10;  &quot;product_type&quot;: &quot;Clothing&quot;,&#10;  &quot;product_thumb&quot;: &quot;product_thumb&quot;,&#10;  &quot;product_quantity&quot;: 20,&#10;  &quot;product_attributes&quot;: {&#10;    &quot;brand&quot;: &quot;Levis's&quot;,&#10;    &quot;size&quot;: &quot;L&quot;,&#10;    &quot;material&quot;: &quot;Denim&quot;&#10;  }&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="x-api-key" />
+                            <option name="value" value="0988742565" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Accept" />
+                            <option name="value" value="*/*" />
+                          </headerState>
+                          <headerState>
+                            <option name="disabled" value="true" />
+                            <option name="key" value="x-client-id" />
+                            <option name="value" value="65fdae1d2b15713dd06443e8" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZkYWUxZDJiMTU3MTNkZDA2NDQzZTgiLCJlbWFpbCI6ImtpZW4yNTcyMDA2Lm50a0BnbWFpbC5jb20iLCJpYXQiOjE3MTEyODgyNDMsImV4cCI6MTcxMTQ2MTA0M30.Ew_Vvo9QApcdhhKEuuHvqBt4AuOyaWSMHNjreVQD1N4" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="611070ac-12cc-4eea-85ab-c3e6a2165e01" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="v1/api/product/:product_id" />
+                      <option name="url" value="http://localhost:3000/v1/api/product/660032a9e02d901ef10979ee" />
                     </requestState>
                   </list>
                 </option>

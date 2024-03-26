@@ -12,7 +12,9 @@ const {findAllDraftsForShop,
     publishProductByShop,
     findAllPublishedForShop,
     searchProductByUser,
-    unpublishProductByShop
+    unpublishProductByShop,
+    findAllProducts,
+    findProduct
 } = require("../models/repositories/product.repo");
 
 //define Factory class to create product instances
@@ -58,6 +60,19 @@ class ProductFactory {
     //search product
     static async searchProduct({keySearch}){
         return await searchProductByUser({keySearch});
+    }
+
+    static async findAllProducts(limit = 50, sort = 'ctime', page = 1,filters = {isPublished: true}){
+        return await findAllProducts({limit, sort, page, filters,
+            select : ['product_name','product_thumb','product_price','product_quantity','product_type','product_shop','product_attributes']
+        });
+    }
+
+    static async findProduct(product_id){
+        return await findProduct({
+            product_id,
+            unselect: ['__v']
+        });
     }
 }
 
